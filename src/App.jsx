@@ -7,14 +7,22 @@ import MyNav from "./MyComponents/MyNav";
 import MyFooter from "./MyComponents/MyFooter";
 import MyAlert from "./MyComponents/MyAlert";
 import MyWelcome from "./MyComponents/MyWelcome";
+import MyBooks from "./MyComponents/MyBooks";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <MyNav />
-      <MyWelcome />
+      <div className="d-flex flex-column min-vh-100 justify-content-center">
+        <MyNav />
+        <main className=" d-flex align-items-center flex-grow-1">
+          <div className="">
+            <MyWelcome />
+            <MyBooks />
+          </div>
+        </main>
+      </div>
       <MyFooter />
     </>
   );

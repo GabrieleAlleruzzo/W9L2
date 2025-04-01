@@ -5,9 +5,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 function MyFooter() {
   return (
-    <Navbar fixed="bottom" expand="lg" className="bg-body-tertiary">
-      <Container className=" d-flex justify-content-center">
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container className=" d-flex flex-column justify-content-center">
         <Navbar.Brand href="#home">EPICbook</Navbar.Brand>
+        <p className="text-center"> Epicode - {new Date().getFullYear()} </p>
       </Container>
     </Navbar>
   );

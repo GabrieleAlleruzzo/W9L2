@@ -7,9 +7,7 @@ import MyAlert from "./MyAlert";
 function MyWelcome() {
   return (
     <>
-      <h2>Welcome</h2>
-      <Button variant="danger">Clock to show Alert</Button>
-      <MyAlert />
+      <MyAlert />{" "}
     </>
   );
 }
