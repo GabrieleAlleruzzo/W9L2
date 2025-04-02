@@ -8,6 +8,7 @@ import MyFooter from "./MyComponents/MyFooter";
 import MyAlert from "./MyComponents/MyAlert";
 import MyWelcome from "./MyComponents/MyWelcome";
 import MyBooks from "./MyComponents/MyBooks";
+import Booklist from "./MyComponents/Booklist";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
         <main className=" d-flex align-items-center flex-grow-1">
           <div className="">
             <MyWelcome />
+            <Booklist />
             <MyBooks />
           </div>
         </main>
